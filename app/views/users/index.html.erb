@@ -1,0 +1,16 @@
+<h1>Guestbook At A Glance</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+
+<% @all_users.each do |user| %>
+
+<tr class="users">
+  			<td><%= user.name %></td>
+			</tr>
+		<% end %>
+</table>
