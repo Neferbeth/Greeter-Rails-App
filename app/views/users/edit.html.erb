@@ -1,0 +1,18 @@
+
+
+<div class="user">
+  			<p><%= @user.name %></p>
+        <p><%= @user.id %></p>
+			</div>
+
+  <%= form_for(@user) do |f| %>
+          <div class="field">
+            <%= f.label :name %><br>
+            <%= f.text_field :name %><br>
+          </div>
+          <div class="actions">
+            <%= f.submit "Update Name" %>
+          </div>
+          <% end %>
+
+<%= button_to('Delete', { action: :destroy, id: @user.id }, method: :delete) %>

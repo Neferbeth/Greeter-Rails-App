@@ -4,4 +4,8 @@ class ApplicationController < ActionController::Base
     render :index
   end
 
+  def not_found
+    raise ActionController::RoutingError.new('Not Found')
+  end
+
 end
