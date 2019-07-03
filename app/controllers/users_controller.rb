@@ -43,6 +43,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def thing
+    render json: {data: "hello_world"}
+  end
+
   private
 
   def user_params
